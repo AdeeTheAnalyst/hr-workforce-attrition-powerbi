@@ -2,7 +2,7 @@
 
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?logo=powerbi&logoColor=black)
 ![DAX](https://img.shields.io/badge/DAX-1F2A44)
-![Power Query](https://img.shields.io/badge/Power%20Query%20(M)-1B9AAA)
+![Power Query](https://img.shields.io/badge/Power%20Query%20-1B9AAA)
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 
 **An end-to-end HR analytics project: raw employee records turned into a four-page Power BI dashboard that shows how fast a company loses people, when and why they leave, and where to act first.**
@@ -39,7 +39,7 @@
 | **Data** | 311 employee records (207 active, 104 left), hires from 2006 to 2018, snapshot as of 28 Feb 2019 |
 | **Answer** | Yes, but it is concentrated. About **7% of people leave each year** (peaking above 10% in 2015 and 2016), **85% of exits are voluntary**, and most leavers go within five years, usually for **career or pay reasons**. Production holds two-thirds of staff, pays the least and loses four in ten of its people |
 | **Biggest levers** | Three hiring channels supplied a third of staff but 55% of leavers; three Production teams lose more than half their people |
-| **Tools** | Power Query (M), DAX, Power BI Desktop |
+| **Tools** | Power Query, DAX, Power BI Desktop |
 
 ---
 
@@ -60,7 +60,7 @@ Leadership wants to know whether employee turnover is a problem and where to foc
 
 > Figures below are from the full dataset with no filters applied.
 
-1. **Turnover is about 7% a year, not 33%.** Annual attrition averaged **7.1%** (2011 to 2018), peaking at **10.3% in 2015** and **9.8% in 2016**, and falling to 3.6% in 2017. The often-quoted 33% (104 of 311) is the *cumulative* share of everyone ever employed who has left since 2006.
+1. **Turnover is about 7% a year.** Annual attrition averaged **7.1%** (2011 to 2018), peaking at **10.3% in 2015** and **9.8% in 2016**, and falling to 3.6% in 2017. **33%** (104 of 311) is the *cumulative* share of everyone ever employed who has left since 2006.
 2. **Exits are mostly voluntary.** 88 of 104 leavers (**85%**) chose to go.
 3. **The first five years are the risk window.** Median tenure at exit is **3.4 years**; **41%** of leavers go within three years. Active staff have a median of 5.3 years.
 4. **People leave for opportunity, not unhappiness.** Grouped exit reasons: Career & Pay **38%**, Personal 23%, Work Conditions 21%, Performance & Conduct 17%. Only 13% of leavers gave "unhappy" as the reason.
@@ -229,7 +229,6 @@ I would rather state these than have a reader find them:
 - **Correlation, not causation.** Manager and channel results are patterns to investigate, not proof of cause. Team sizes are 17 to 22 people, so a handful of exits moves the rate a lot, and some teams differ in hiring channel or department.
 - **Exit-reason grouping is a judgement call.** A different mapping would shift the category percentages slightly.
 - **Weak early-warning signals.** Absence and lateness correlate only weakly with leaving (about 0.1 to 0.14). They are conversation triggers, not a prediction model.
-- **Employee-level details are not published.** The public version of the report omits the employee-level table.
 
 ---
 
@@ -264,22 +263,12 @@ hr-workforce-attrition-powerbi/
 1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/rhuebner/human-resources-data-set) and save the HR file as `HRDataset_Raw.csv`.
 2. Open `dashboard/HR_Attrition_Dashboard.pbit` in Power BI Desktop (free).
 3. When prompted, enter the file path to your CSV, then click **Load**.
-4. If dates look wrong, check your regional settings; the query reads them with the English (United States) locale.
-
----
-
-## Next steps
-
-- Add a **hire-year cohort matrix** (channel × hire year) so the cohort effect is visible in the report itself.
-- Add **pay by position and gender** (median salary and F÷M ratio, groups of 5+ only).
-- Model **time-to-exit with survival analysis** (Kaplan–Meier) in Python or R to handle the cohort-exposure problem properly.
-- Add a **replacement-cost what-if parameter** to put an illustrative cost on turnover.
 
 ---
 
 ## Skills demonstrated
 
-- **Data preparation:** Power Query (M), text and date cleaning, locale handling, custom columns, grouping, data-quality checks
+- **Data preparation:** Power Query, text and date cleaning, locale handling, custom columns, grouping, data-quality checks
 - **Data modelling:** star schema, role-playing date dimension with active and inactive relationships, a dedicated measures table
 - **DAX:** `CALCULATE`, `USERELATIONSHIP`, `REMOVEFILTERS`, `ALLSELECTED`, `VAR/RETURN`, iterators, `TOPN`, dynamic text measures
 - **Analytics judgement:** annual vs cumulative rates, average-headcount denominators, small-sample rules, cohort-exposure checks
@@ -290,15 +279,15 @@ hr-workforce-attrition-powerbi/
 
 ## About me
 
-**[Your Name]**, Data Analyst
+**Sherifat Adeshina**, Data Analyst
 
-- LinkedIn: [your-profile-link]
-- Medium write-up: [article-link]
-- GitHub: [your-github-link]
-- Email: [your-email]
+- LinkedIn: [https://www.linkedin.com/in/adeshina-sherifat]
+- Medium write-up: [https://medium.com/@eyinadeadeshina36/list/from-data-to-decision-making-561ab26ca151]
+- GitHub: [https://github.com/AdeeTheAnalyst]
+- Email: [mailto:eyinadeadeshina36@gmail.com]
 
 ---
 
 ## Acknowledgements
 
-Dataset: *Human Resources Data Set* by Dr. Rich Huebner and Dr. Carla Patalano (Kaggle). This project is for learning and portfolio purposes only.
+Dataset: *Human Resources Data Set* by Dr. Rich Huebner and Dr. Carla Patalano (Kaggle).

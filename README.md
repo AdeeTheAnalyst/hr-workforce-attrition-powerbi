@@ -278,11 +278,10 @@ hr-workforce-attrition-powerbi/
 
 ## About me
 
-**Sherifat Adeshina**, Data Analyst
+**Sherifat Adeshina** - Data Analyst
 
 - LinkedIn: [https://www.linkedin.com/in/adeshina-sherifat]
-- Medium write-up: [https://medium.com/@eyinadeadeshina36/list/from-data-to-decision-making-561ab26ca151]
-- GitHub: [https://github.com/AdeeTheAnalyst]
+- Medium Portfolio: [https://medium.com/@eyinadeadeshina36/list/from-data-to-decision-making-561ab26ca151]
 - Email: [mailto:eyinadeadeshina36@gmail.com]
 
 ---

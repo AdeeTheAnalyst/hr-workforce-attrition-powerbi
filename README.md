@@ -25,9 +25,8 @@
 10. [Limitations](#limitations)
 11. [Repository structure](#repository-structure)
 12. [How to use this project](#how-to-use-this-project)
-13. [Next steps](#next-steps)
-14. [Skills demonstrated](#skills-demonstrated)
-15. [About me](#about-me)
+13. [Skills demonstrated](#skills-demonstrated)
+14. [About me](#about-me)
 
 ---
 
@@ -87,7 +86,7 @@ Leadership wants to know whether employee turnover is a problem and where to foc
 
 ## Dashboard walkthrough
 
-The report has four pages with one consistent colour rule: **orange = problem, teal = healthy, grey = neutral**. Department and Year slicers are available on every page.
+The report has four pages. Department and Year slicers are available on every page.
 
 ### 1. Executive Insights
 Five KPIs (headcount, average annual attrition, cumulative separation, voluntary share, median tenure at exit), the annual attrition trend with its average line, and four insight cards written as DAX measures so the sentences update with the filters.
